@@ -1,0 +1,17 @@
+/* tache-list.component.css */
+
+.task {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #333;
+}
+
+button {
+  margin-top: 5px;
+  padding: 5px;
+  cursor: pointer;
+}

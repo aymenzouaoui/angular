@@ -1,0 +1,17 @@
+<!-- tache-list.component.html -->
+
+<div>
+  <h2>List of Tasks</h2>
+  <div *ngFor="let tache of taches">
+    <div class="task">
+      <h3>{{ tache.titre }}</h3>
+      <p>{{ tache.description }}</p>
+      <p>Category: {{ tache.category }}</p>
+    
+      <p>Is in Trash: {{ tache.isInTrash ? 'Yes' : 'No' }}</p>
+      <button (click)="moveToTrash(tache.id)">Move to Trash</button>
+      <button (click)="restoreFromTrash(tache.id)">Restore from Trash</button>
+      <button (click)="deletePermanently(tache.id)">Delete Permanently</button>
+    </div>
+  </div>
+</div>
